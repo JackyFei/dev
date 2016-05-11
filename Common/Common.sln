@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{A744
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Caching.Microsoft", "Common.Caching.Microsoft\Common.Caching.Microsoft.csproj", "{0A0287FB-71FF-4696-B4B7-FEE637E557DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{713538AB-1C98-40FA-A41D-A7AC51AA4641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Common", "UnitTest.Common\UnitTest.Common.csproj", "{0237EAD8-B180-4352-92A7-A05E433D025E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +27,16 @@ Global
 		{0A0287FB-71FF-4696-B4B7-FEE637E557DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A0287FB-71FF-4696-B4B7-FEE637E557DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A0287FB-71FF-4696-B4B7-FEE637E557DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0237EAD8-B180-4352-92A7-A05E433D025E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0237EAD8-B180-4352-92A7-A05E433D025E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0237EAD8-B180-4352-92A7-A05E433D025E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0237EAD8-B180-4352-92A7-A05E433D025E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0A0287FB-71FF-4696-B4B7-FEE637E557DF} = {A744611F-5652-4D59-9868-9BEBF7E587D4}
+		{0237EAD8-B180-4352-92A7-A05E433D025E} = {713538AB-1C98-40FA-A41D-A7AC51AA4641}
 	EndGlobalSection
 EndGlobal
