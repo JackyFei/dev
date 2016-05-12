@@ -1,4 +1,5 @@
 ﻿using System;
+using Common.Resources;
 
 namespace Common.Utils
 {
@@ -17,7 +18,7 @@ namespace Common.Utils
         {
             if (obj == null)
             {
-                throw new ArgumentNullException(paramName, string.IsNullOrEmpty(message) ? string.Format(ResUtils.Guard_ArgumentNotNull, paramName) : message);
+                throw new ArgumentNullException(paramName, string.IsNullOrEmpty(message) ? string.Format(Messages.Guard_ArgumentNotNull, paramName) : message);
             }            
         }
 
@@ -31,7 +32,7 @@ namespace Common.Utils
         {
             if (string.IsNullOrEmpty(str))
             {
-                throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(ResUtils.Guard_ArgumentNotNullOrEmpty, paramName) : message);
+                throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(Messages.Guard_ArgumentNotNullOrEmpty, paramName) : message);
             }
         }
 
@@ -49,7 +50,7 @@ namespace Common.Utils
 
             if (obj.GetType() != expectedType)
             {
-                throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(ResUtils.Guard_InstanceOfType, paramName, expectedType) : message);
+                throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(Messages.Guard_InstanceOfType, paramName, expectedType) : message);
             }
         }
 
@@ -67,7 +68,7 @@ namespace Common.Utils
 
             if (objType != expectedType)
             {
-                throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(ResUtils.Guard_InstanceOfType, paramName, expectedType) : message);
+                throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(Messages.Guard_InstanceOfType, paramName, expectedType) : message);
             }
         }
     }
