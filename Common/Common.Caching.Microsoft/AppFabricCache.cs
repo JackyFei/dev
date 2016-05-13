@@ -33,10 +33,7 @@ namespace Common.Caching.Microsoft
         #endregion
 
         #region ICache
-        public string Name
-        {
-            get { return string.Format("AppFabricCache-{0}", _name); }
-        }
+        public string Name => $"AppFabricCache-{_name}";
 
         public bool Add<T>(string key, T value)
         {
