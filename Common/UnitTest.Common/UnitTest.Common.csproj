@@ -55,13 +55,31 @@
     <Compile Include="Caching\UnitTestAppFabricCache.cs" />
     <Compile Include="Caching\UnitTestCacheBase.cs" />
     <Compile Include="Caching\UnitTestMsMemoryCache.cs" />
+    <Compile Include="Messaging\ConsumerTestBase.cs" />
+    <Compile Include="Messaging\Message.cs" />
+    <Compile Include="Messaging\PublisherTestBase.cs" />
+    <Compile Include="Messaging\RabbitMqConsumerTest.cs" />
+    <Compile Include="Messaging\RabbitMqPublisherTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeToLive\DefaultTimeToLiveProcessorTest.cs" />
     <Compile Include="Utils\UnitTestGuard.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common.Caching.Alachisoft\Common.Caching.Alachisoft.csproj">
+      <Project>{4e77cd67-1cdb-48bb-9637-498108e55908}</Project>
+      <Name>Common.Caching.Alachisoft</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common.Caching.Microsoft\Common.Caching.Microsoft.csproj">
       <Project>{0a0287fb-71ff-4696-b4b7-fee637e557df}</Project>
       <Name>Common.Caching.Microsoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Messaging.RabbitMq\Common.Messaging.RabbitMq.csproj">
+      <Project>{41d1a46f-72b7-4478-937f-cfcd93a9ea15}</Project>
+      <Name>Common.Messaging.RabbitMq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.TimeToLive\Common.TimeToLive.csproj">
+      <Project>{54de1c8f-47bf-456b-8425-224c5d8fe92d}</Project>
+      <Name>Common.TimeToLive</Name>
     </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{a5fcf60b-4f78-49d8-9154-f7ced8720f1a}</Project>

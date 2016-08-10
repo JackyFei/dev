@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A5FCF60B-4F78-49D8-9154-F7CED8720F1A}</ProjectGuid>
+    <ProjectGuid>{41D1A46F-72B7-4478-937F-CFCD93A9EA15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
+    <RootNamespace>Common.Messaging.RabbitMq</RootNamespace>
+    <AssemblyName>Common.Messaging.RabbitMq</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,6 +36,10 @@
     <AssemblyOriginatorKeyFile>jacky.fei.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RabbitMQ.Client, Version=3.6.5.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\RabbitMQ.Client.3.6.5\lib\net45\RabbitMQ.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,37 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caching\ICache.cs" />
-    <Compile Include="Messaging\Consumer\IConsumer.cs" />
-    <Compile Include="Messaging\Publisher\IPublisher.cs" />
+    <Compile Include="ConnectionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimeToLive\ITimeToLiveProcessor.cs" />
-    <Compile Include="TimeToLive\TimeToLiveActionRequest.cs" />
-    <Compile Include="TimeToLive\TimeToLiveActionResponse.cs" />
-    <Compile Include="TimeToLive\TimeToLiveFunctionRequest.cs" />
-    <Compile Include="TimeToLive\TimeToLiveFunctionResponse.cs" />
-    <Compile Include="Utils\Guard.cs" />
-    <Compile Include="Resources\Messages.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Messages.resx</DependentUpon>
-    </Compile>
+    <Compile Include="RabbitMqConsumer.cs" />
+    <Compile Include="RabbitMqContext.cs" />
+    <Compile Include="RabbitMqPublisher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="jacky.fei.pfx" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Messages.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a5fcf60b-4f78-49d8-9154-f7ced8720f1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

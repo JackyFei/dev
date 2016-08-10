@@ -71,5 +71,17 @@ namespace Common.Utils
                 throw new ArgumentException(string.IsNullOrEmpty(message) ? string.Format(Messages.Guard_InstanceOfType, paramName, expectedType) : message);
             }
         }
+
+        public static void RequireAttribute(object obj, Type attributeType, string paramName, string message = null)
+        {
+            ArgumentNotNull(obj, "obj");
+            ArgumentNotNull(attributeType, "attributeType");
+
+            var attributes = obj.GetType().GetCustomAttributes(attributeType, true);
+            if (attributes == null || attributes.Length == 0)
+                throw new ArgumentException(string.IsNullOrEmpty(message)
+                    ? string.Format(Messages.Guard_RequireAttribute, paramName, attributeType)
+                    : message);
+        }
     }
 }

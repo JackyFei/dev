@@ -86,5 +86,14 @@ namespace Common.Resources {
                 return ResourceManager.GetString("Guard_InstanceOfType", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameter {0} should have attribute {1}..
+        /// </summary>
+        internal static string Guard_RequireAttribute {
+            get {
+                return ResourceManager.GetString("Guard_RequireAttribute", resourceCulture);
+            }
+        }
     }
 }
