@@ -14,6 +14,12 @@ namespace UnitTest.Common.Messaging
 
         protected abstract IConsumeContext ConsumeContext { get; }
 
+        [ClassCleanup]
+        public void Cleanup()
+        {
+            Consumer.Dispose();
+        }
+
         [TestMethod]
         public void Consume_Success()
         {
@@ -28,9 +34,8 @@ namespace UnitTest.Common.Messaging
             // ReSharper disable once AccessToDisposedClosure
             Task.Factory.StartNew(() => Consumer.Start(context));
             
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
             Consumer.Stop();
-            Consumer.Dispose();
         }
     }
 }
