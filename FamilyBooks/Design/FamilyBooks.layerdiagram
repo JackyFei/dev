@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="80b28d7c-3c27-4684-9f8c-04787242c26b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="2ddf198a-788a-4899-bbd5-dc51410b0b0c" name="FamilyBooks.Webapi">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="10a2b776-2146-4081-b21a-fda3991da6fb" direction="Forward">
+          <layerMoniker Id="1e6cd137-bf6f-422d-8c35-a96c1ffa7eb0" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="abbcf13c-926e-4e04-8904-e15839e9245f" name="FamilyBooks.BusinessLogic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7d216526-8fd4-49d5-99e4-31dba7e6e89c" direction="Forward">
+          <layerMoniker Id="1e6cd137-bf6f-422d-8c35-a96c1ffa7eb0" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="b1472c27-2ad1-4f95-a3c2-6902539cbcdb" name="FamilyBooks.Repository">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="71be467d-81b5-43e5-a014-919e49a75d56" direction="Forward">
+          <layerMoniker Id="1e6cd137-bf6f-422d-8c35-a96c1ffa7eb0" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="1e6cd137-bf6f-422d-8c35-a96c1ffa7eb0" name="FamilyBooks.Common" />
+  </layers>
+</layerModel>

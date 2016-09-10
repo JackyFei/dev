@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8915ba6a-530c-456d-a5c3-242473574343" name="FamilyBooks" linkedPackageId="97e4c894-93d6-461f-ac3f-fef34d845b7c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2db07675-7199-49c2-a47b-e31f1cb8161e" name="Record expenditure" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a50f8369-c4d8-4cf8-b9ad-18cc5ce54c55" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6c33a0be-0c18-4b7c-b36b-6a01be9c8389" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="451bb8e3-7436-43fd-adc2-38d959a2a074" />
+        <targetEnds>
+          <association Id="0bf84c1c-f780-463a-9be9-e6fc4b1ee0dd" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View accounts" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="efbb4d04-d106-40ad-9328-64df2257d92f" LastKnownName="Manage accounts" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cd0a12d-e840-4f51-a82a-89dae3d1af38" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="13edc31c-6c98-47a6-97fa-c505654e94ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56e17927-1659-4010-8702-07a97a64aa14" name="View accounts" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c25fb79f-734d-4a90-a73f-7f86837c1ee7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4eb9cd01-427a-4238-bc6a-ebf4bab9e3e0" />
+          </association>
+          <association Id="2a38eb57-8ae0-4a30-a09d-81ca82710e5c" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Record expenditure" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2db07675-7199-49c2-a47b-e31f1cb8161e" LastKnownName="Record expenditure" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="caa7a811-c206-4762-8d03-c1322a23a1b9" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a65bf3e1-0026-42ac-a930-f593ab68abef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7f11143-c596-479a-af62-515e1eb09820" name="Record expenditure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="930b650e-9d28-407d-8b0c-32a33bfedd52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c7b66ab5-8fc4-457e-b34c-825d23e93dd0" />
+          </association>
+          <association Id="5a558445-ec7d-42bb-af0c-0bf2de8024dc" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Record income" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d066b8e9-2bcd-4938-84b7-d83c547f09e2" LastKnownName="Record income" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="909db2ef-99fa-4d36-80db-998175cbffa0" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2c555ced-1222-4af8-b207-eff03d061c63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03a8a78d-18a9-4a22-8304-c3783e34532a" name="Record income" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6921df3e-5724-49e1-8949-61ad3069f47c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="764bffaa-a8c0-46c0-b83c-78e3b637462c" />
+          </association>
+          <association Id="106baa59-99d0-4e24-9e96-dd860625754f" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Update user profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7c98d71f-f039-4113-bcc2-45b02fffc48d" LastKnownName="Update user profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b99b1ef-5b6a-4b73-9990-4e1b86283372" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="49e5bf89-e8e6-46fb-92da-fc143d7743e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97048e43-c94f-4809-ab47-3ea1f80e1b70" name="Update user profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f4aaba29-945b-4732-b4b1-4e25aa53a4b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0b9c2c48-c4e1-4b30-a234-9e853454a759" />
+          </association>
+          <association Id="bd414e59-60c6-4e0e-9ca1-4c373ed0ae79" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4f900a77-e252-4134-909a-eb5cb55b2737" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa2a6a2b-0326-4f74-b65a-eca32b3c8db2" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7ca14c95-823e-4a06-a627-07533032a0a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bd852f9-cde6-4712-b119-5e163b1423d7" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9c64387e-fc4e-4477-b5c8-c6d953b4c107" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d37a3b3d-3672-47a3-9598-cdf835a8ec3e" />
+          </association>
+          <association Id="9c6bf306-879d-4aeb-a404-30f25d3d2021" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6b00be6e-2c05-4fa8-b6fa-66a8c3e9026a" LastKnownName="View reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad43a3f4-7688-4491-a0d9-d03c83f0cf6b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b5d3bb42-5784-493c-9b27-0cbd339a1c1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa55b4c6-98ab-4714-9283-02686cf69c7f" name="View reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc02d7d0-4572-447f-9e66-1111bf889263" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8019b373-5ad5-45d6-a5e5-580cbde33dc8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d066b8e9-2bcd-4938-84b7-d83c547f09e2" name="Record income" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fef274c0-0ce1-4eba-8ea4-779565812578" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="eddc71cf-0ac8-47b4-ba73-9482992dcf25" name="Create account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04b7622b-9c89-4bcf-afbe-da2e9e9bfda8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="efbb4d04-d106-40ad-9328-64df2257d92f" name="Manage accounts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca8479d2-0167-4af8-8d3e-041cbf9f212a" />
+        <additions>
+          <include Id="2942ce00-b7a8-4d59-82e2-bf2d56955b70">
+            <useCaseMoniker Id="eddc71cf-0ac8-47b4-ba73-9482992dcf25" LastKnownName="Create account" />
+            <elementDefinition Id="9badd252-3685-4c55-9526-874a863c9d3a" />
+          </include>
+          <include Id="1e57d7a8-d49a-47d3-9ad3-9cee1eda77d1">
+            <useCaseMoniker Id="f220dfa3-8ce1-40d7-ab48-cb80d23f699b" LastKnownName="View accounts" />
+            <elementDefinition Id="2242fea8-9fcb-40ac-bf8f-18db106c45d1" />
+          </include>
+          <include Id="b889fa63-4843-40f6-83b0-289273e105c9">
+            <useCaseMoniker Id="0b20a837-8e87-4cf2-8659-ebce57ecdf81" LastKnownName="Update account" />
+            <elementDefinition Id="873d1ada-b96a-4953-b20d-558266e2a738" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7c98d71f-f039-4113-bcc2-45b02fffc48d" name="Update user profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9de765b5-1cce-4ab2-b458-5ba03af927bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4f900a77-e252-4134-909a-eb5cb55b2737" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cb4f779-11a0-42d6-8920-dbc13ac4237f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e50f51ea-ab5b-4e66-8cd0-e2d81ea77beb" name="View income Monthly/Yearly report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4542f4c4-d2a5-462b-a69b-c0325f201f25" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="228d6d35-86cf-422b-b5e4-461148ee7d10" name="View expenditureMonthly/Yearly report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="15030b67-7c0b-4ab4-90f1-b9ef67ffe642" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f220dfa3-8ce1-40d7-ab48-cb80d23f699b" name="View accounts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69283045-2fcb-4d62-9644-c2fa70f53ecc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b20a837-8e87-4cf2-8659-ebce57ecdf81" name="Update account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3bc7cbc-e56c-4587-b2db-8e3aa752c3c4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6b00be6e-2c05-4fa8-b6fa-66a8c3e9026a" name="View reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a557b4e5-3ef4-4959-a313-6f4b318233d7" />
+        <additions>
+          <include Id="cd2b0586-bf4b-4d03-96ea-7fc4591772ce">
+            <useCaseMoniker Id="e50f51ea-ab5b-4e66-8cd0-e2d81ea77beb" LastKnownName="View income Monthly/Yearly report" />
+            <elementDefinition Id="be39717e-0fc6-410b-85e3-d786d839b652" />
+          </include>
+          <include Id="a49f8592-ce73-431d-8636-e9949457a258">
+            <useCaseMoniker Id="228d6d35-86cf-422b-b5e4-461148ee7d10" LastKnownName="View expenditureMonthly/Yearly report" />
+            <elementDefinition Id="eddbaae6-8561-4ba4-84fa-b2762e1edfd8" />
+          </include>
+          <include Id="7268ce3a-8a69-4af3-a888-93dd7fb0b264">
+            <useCaseMoniker Id="6a87359d-8c1d-48d9-ada0-89dc913783a0" LastKnownName="View Monthly/Yearly balance reports" />
+            <elementDefinition Id="e5bd2a39-363b-4a21-9f9c-44f667b56b1a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6a87359d-8c1d-48d9-ada0-89dc913783a0" name="View Monthly/Yearly balance reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0912e76f-0b37-4363-810c-3be2b0979756" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ddcd145f-6b0e-4574-aabd-4cb568e313d0" name="Super User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f3c073e-c201-4b3a-b0f3-802b6bc75403" />
+        <generalsInternal>
+          <generalization Id="eeb0762a-dcce-40f9-af40-6e8c026bd753" isSubstitutable="false">
+            <actorMoniker Id="6c33a0be-0c18-4b7c-b36b-6a01be9c8389" LastKnownName="User" />
+            <elementDefinition Id="e8b99010-4cbf-4a1b-9e62-2e9e4c8b2bf2" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="0787c601-b3fd-491a-92aa-9c49360b06a1" isDerived="false" sourceEndRoleName="Super User" targetEndRoleName="Create user profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="40a506f4-ca52-4629-a139-b12def88722f" LastKnownName="Create user profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4669f938-1c30-4768-aacd-eb8b4ba9302a" name="Super User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="41b2ccf8-0f0a-4694-8b7c-5e7bcdfe4c40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74f18cc1-3649-45f1-88f7-f81b39c76cd9" name="Create user profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="54347a74-4e7c-47b2-b85c-e93b119587ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ad8010d7-d9b9-43f8-9e68-584da92eb110" />
+          </association>
+          <association Id="91d3529b-8dc1-41ba-8d5c-0676281d3234" isDerived="false" sourceEndRoleName="Super User" targetEndRoleName="Manage account types" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="74534726-1b73-4fa8-b143-23125a1943b9" LastKnownName="Manage account types" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c738e0e-2d43-4cd1-996a-8e0a2c9ec4ec" name="Super User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="559e9ab9-b787-432b-b34e-d443efe8928e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ac62fcf-21e0-41f7-a18a-b447f390b2dd" name="Manage account types" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01dc9517-8ee3-433e-b793-44f1fe5efe1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e2d0423-b756-45fc-a0ff-0510423f95ba" />
+          </association>
+          <association Id="e7f96a6d-1543-45a3-b922-088757d406a6" isDerived="false" sourceEndRoleName="Super User" targetEndRoleName="Manage income categories" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d5740a62-481e-49d9-8f1d-a68ac22ff237" LastKnownName="Manage income categories" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77b8fada-fb41-476e-9575-aa3d8c8110ec" name="Super User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8d46fd3c-6034-4066-a0b6-f1e60259615c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0030982-5396-4e92-8d30-435db5f88d65" name="Manage income categories" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a09743f-a428-4c6c-a3e5-d8ff2af95901" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae9bb8e6-79b1-415a-a2eb-476244ed324b" />
+          </association>
+          <association Id="e6daa6d1-f40a-48e3-9879-a1775a5d81bc" isDerived="false" sourceEndRoleName="Super User" targetEndRoleName="Manage expenditure categories" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="03a2c165-66a9-4d71-bf9c-2cbf48ff9423" LastKnownName="Manage expenditure categories" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc0ffe50-620a-4568-b67f-6dc04c73922f" name="Super User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b5d0f31-92df-4932-aa49-025a7143b0d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a551492-6f52-48b9-bfbc-04b02e209583" name="Manage expenditure categories" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef98c4a4-7cf0-47b1-a8ae-7b949b5f6299" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db9b9221-65b4-489c-b117-0a9fa3cfc547" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="40a506f4-ca52-4629-a139-b12def88722f" name="Create user profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4474b81-71e1-4563-856e-b1b9d4538ed1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="74534726-1b73-4fa8-b143-23125a1943b9" name="Manage account types" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2940e185-b688-4f94-8330-fb20881ede90" />
+        <additions>
+          <include Id="f4e0f12b-09ec-4b4a-a169-eb1e9885f3e6">
+            <useCaseMoniker Id="1a52aa1e-d64f-4585-aef5-47e8d89abe36" LastKnownName="Create account type" />
+            <elementDefinition Id="0c89884a-dddd-454e-86d4-adc2bb4071b0" />
+          </include>
+          <include Id="ce871d02-3169-4a69-8e3e-ff9a20e518d0">
+            <useCaseMoniker Id="b1eeeb5a-2983-4588-9823-f6c6f64cc127" LastKnownName="Update account type" />
+            <elementDefinition Id="59f1abff-e9f1-440d-b8e2-9face589ec5e" />
+          </include>
+          <include Id="368395b6-844f-4c50-b497-5bf4adb95923">
+            <useCaseMoniker Id="01cb30f1-3567-4dfe-99c3-ac4160906e94" LastKnownName="View account types" />
+            <elementDefinition Id="a9eac026-8428-46ad-83ff-0f3c2efa892a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d5740a62-481e-49d9-8f1d-a68ac22ff237" name="Manage income categories" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c49f44aa-14a8-4f62-8492-3a5e4b44df9a" />
+        <additions>
+          <include Id="06235c90-63f3-448d-8898-112839cb1738">
+            <useCaseMoniker Id="118c0ff7-4ba2-44a7-b17a-11688035235c" LastKnownName="Create income category" />
+            <elementDefinition Id="b93638aa-994a-43f2-ad41-3824e03be5a5" />
+          </include>
+          <include Id="3b1e7dbc-4277-4f0c-8199-9c01a4cfbab8">
+            <useCaseMoniker Id="49154b02-d0a8-45d4-a011-8442b35e40bc" LastKnownName="Update income category" />
+            <elementDefinition Id="5511eb98-b2fa-466a-a4ad-041f1ed05622" />
+          </include>
+          <include Id="4147d5fa-f6bb-43b3-9026-dc47c510043e">
+            <useCaseMoniker Id="de1892df-2dee-451a-ae32-8ba3f74b4f3c" LastKnownName="View income categories" />
+            <elementDefinition Id="b996a85c-a09b-435d-9b1d-e070c786f7c4" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="03a2c165-66a9-4d71-bf9c-2cbf48ff9423" name="Manage expenditure categories" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a1621c46-2370-4818-a920-30a41c7c1665" />
+        <additions>
+          <include Id="52e1f54f-b833-4b50-a96c-111085e3a04e">
+            <useCaseMoniker Id="20c4222b-152f-42bb-92a1-7da28ba42fc3" LastKnownName="Create expenditure category" />
+            <elementDefinition Id="77c59647-7407-4e5f-8df3-70d983224381" />
+          </include>
+          <include Id="67a4d59f-62d5-4a6a-b8b1-66e66eda4d2a">
+            <useCaseMoniker Id="003a8126-e8e0-4a60-89f5-eb2f03c8f71b" LastKnownName="Update expenditure category" />
+            <elementDefinition Id="d6d7d020-5ab5-43fc-8ec3-54ab13d926a9" />
+          </include>
+          <include Id="1f741326-0d56-4ae7-b26c-247a66fa6d76">
+            <useCaseMoniker Id="e1fd6260-b641-4cb0-b991-ce54537b4615" LastKnownName="View expenditure categories" />
+            <elementDefinition Id="c8cd8e32-a7d7-4cd4-8671-19f96b530037" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1a52aa1e-d64f-4585-aef5-47e8d89abe36" name="Create account type" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a0a2632-814a-43af-932a-584adf3829f7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b1eeeb5a-2983-4588-9823-f6c6f64cc127" name="Update account type" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d297fd5a-4e1c-4c63-8b2a-0926243c4011" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="01cb30f1-3567-4dfe-99c3-ac4160906e94" name="View account types" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2278f2b-171f-4a68-bc31-753843e2de70" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="118c0ff7-4ba2-44a7-b17a-11688035235c" name="Create income category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="142bc2e1-1a29-4ff4-bbf2-00155dd372fe" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="49154b02-d0a8-45d4-a011-8442b35e40bc" name="Update income category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="152c0343-181b-4086-b748-ea8e82898151" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de1892df-2dee-451a-ae32-8ba3f74b4f3c" name="View income categories" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="595e9064-e1ea-49dd-ab6b-21762e18cf98" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="20c4222b-152f-42bb-92a1-7da28ba42fc3" name="Create expenditure category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd54ef9-e843-4f64-9ea0-647adcf1fa7c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="003a8126-e8e0-4a60-89f5-eb2f03c8f71b" name="Update expenditure category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2fbe284c-bc71-4ccf-95cc-eb1a861781a1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1fd6260-b641-4cb0-b991-ce54537b4615" name="View expenditure categories" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47df29dd-1ebe-4c5e-96c1-e4ba3d94e816" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="97e4c894-93d6-461f-ac3f-fef34d845b7c" name="Design">
+    <elementDefinition Id="d61b4667-32b6-4976-a16d-d49e87b3922c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="de9ec47c-bbbb-4d64-bea6-3d589cae125e">
+        <profileInstance Id="6dd767f0-a68b-4062-9052-d390dcd8fb6c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dcbb9414-42a1-48bf-8fa6-c582edabfc71">
+        <profileInstance Id="1649950d-f80d-475b-9801-a4ddb7505f01" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
