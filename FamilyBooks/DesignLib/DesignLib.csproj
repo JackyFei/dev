@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A5D28F8-4C40-4197-9870-670792004F53}</ProjectGuid>
+    <ProjectGuid>{DB56B215-3C8F-4204-A5CC-455C5A32605C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FamilyBooks.Common</RootNamespace>
-    <AssemblyName>FamilyBooks.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>DesignLib</RootNamespace>
+    <AssemblyName>DesignLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,18 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Account.cs" />
-    <Compile Include="Account\AccountType.cs" />
-    <Compile Include="Consts.cs" />
+    <Compile Include="GeneratedCode\FamilyBooks.Common\User\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Record\Expenditure.cs" />
-    <Compile Include="Record\Income.cs" />
-    <Compile Include="Record\IRecord.cs" />
-    <Compile Include="Record\Record.cs" />
-    <Compile Include="Record\RecordCategory.cs" />
-    <Compile Include="User\User.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

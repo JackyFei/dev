@@ -40,7 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\FamilyBooksException.cs" />
+    <Compile Include="Record\Expenditure.cs" />
+    <Compile Include="Record\Income.cs" />
+    <Compile Include="Record\RecordBase.cs" />
+    <Compile Include="Record\RecordCategory.cs" />
+    <Compile Include="Record\RecordType.cs" />
+    <Compile Include="Facade\FamilyBooksFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FamilyBooks.Common\FamilyBooks.Common.csproj">
+      <Project>{4a5d28f8-4c40-4197-9870-670792004f53}</Project>
+      <Name>FamilyBooks.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
