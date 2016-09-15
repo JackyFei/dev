@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A5FCF60B-4F78-49D8-9154-F7CED8720F1A}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Messaging.RabbitMq", "Common.Messaging.RabbitMq\Common.Messaging.RabbitMq.csproj", "{41D1A46F-72B7-4478-937F-CFCD93A9EA15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Caching.Alachisoft", "Common.Caching.Alachisoft\Common.Caching.Alachisoft.csproj", "{4E77CD67-1CDB-48BB-9637-498108E55908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Data.SQL", "Common.Data.SQL\Common.Data.SQL.csproj", "{7EEE73DD-07E1-450E-BAC3-77ED3856F0B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{4E77CD67-1CDB-48BB-9637-498108E55908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E77CD67-1CDB-48BB-9637-498108E55908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E77CD67-1CDB-48BB-9637-498108E55908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EEE73DD-07E1-450E-BAC3-77ED3856F0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EEE73DD-07E1-450E-BAC3-77ED3856F0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EEE73DD-07E1-450E-BAC3-77ED3856F0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EEE73DD-07E1-450E-BAC3-77ED3856F0B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
