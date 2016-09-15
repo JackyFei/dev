@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DDCA7585-A255-4175-9E3E-AC751D8D548B}</ProjectGuid>
+    <ProjectGuid>{F09759CF-C959-4126-B03D-2B9E7FC6890C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FamilyBooks.Repository</RootNamespace>
-    <AssemblyName>FamilyBooks.Repository</AssemblyName>
+    <RootNamespace>FamilyBooks.Facade</RootNamespace>
+    <AssemblyName>FamilyBooks.Facade</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,13 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IFamilyBooksRepository.cs" />
+    <Compile Include="Converter.cs" />
+    <Compile Include="FamilyBooksFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Common\Common.csproj">
       <Project>{a5fcf60b-4f78-49d8-9154-f7ced8720f1a}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FamilyBooks.BusinessLogic\FamilyBooks.BusinessLogic.csproj">
+      <Project>{a3d5061f-0b5b-48db-bd6a-492e751d536a}</Project>
+      <Name>FamilyBooks.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FamilyBooks.Common\FamilyBooks.Common.csproj">
+      <Project>{4a5d28f8-4c40-4197-9870-670792004f53}</Project>
+      <Name>FamilyBooks.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

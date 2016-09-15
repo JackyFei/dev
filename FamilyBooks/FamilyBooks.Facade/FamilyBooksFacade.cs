@@ -1,13 +1,24 @@
 ﻿using System;
 using FamilyBooks.Common.Record;
 
-namespace FamilyBooks.BusinessLogic.Facade
+namespace FamilyBooks.Facade
 {
     public class FamilyBooksFacade : IFamilyBooksFacade
     {
+        private readonly Converter _converter = new Converter();
+        private readonly BusinessLogic.Record.RecordManager _recordManager = new BusinessLogic.Record.RecordManager();
+
         public int RecordExpenditure(Expenditure expenditure)
-        {
-            throw new NotImplementedException();
+        {          
+            try
+            {
+                var modelExpenditure = _converter.Convert(expenditure);
+                return _recordManager.RecordExpenditure(modelExpenditure);
+            }
+            catch (BusinessLogic.Exceptions.ValidationException ex)
+            {
+                return 0;
+            }       
         }
 
         public void UpdateExpenditure(Expenditure expenditure)

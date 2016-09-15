@@ -41,16 +41,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\FamilyBooksException.cs" />
+    <Compile Include="Exceptions\ValidationErrorCode.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="Record\Expenditure.cs" />
     <Compile Include="Record\Income.cs" />
     <Compile Include="Record\RecordBase.cs" />
     <Compile Include="Record\RecordCategory.cs" />
+    <Compile Include="Record\RecordManager.cs" />
     <Compile Include="Record\RecordType.cs" />
-    <Compile Include="Facade\FamilyBooksFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IFamilyBooksRepository.cs" />
+    <Compile Include="Validations\IValidationManager.cs" />
+    <Compile Include="Validations\ValidationManager.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common\Common.csproj">
+      <Project>{a5fcf60b-4f78-49d8-9154-f7ced8720f1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FamilyBooks.Common\FamilyBooks.Common.csproj">
       <Project>{4a5d28f8-4c40-4197-9870-670792004f53}</Project>
       <Name>FamilyBooks.Common</Name>

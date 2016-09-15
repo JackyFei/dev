@@ -1,6 +1,6 @@
 ﻿namespace FamilyBooks.Common
 {
-    public static class Consts
+    internal static class Consts
     {
         public const string Namespace = "";
     }
