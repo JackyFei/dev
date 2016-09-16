@@ -50,12 +50,18 @@
     <Compile Include="Record\RecordManager.cs" />
     <Compile Include="Record\RecordType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\FamilyBooksRepository.cs" />
     <Compile Include="Repository\IFamilyBooksRepository.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="Validations\IValidationManager.cs" />
     <Compile Include="Validations\ValidationManager.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Data.SQL\Common.Data.SQL.csproj">
+      <Project>{7eee73dd-07e1-450e-bac3-77ed3856f0b0}</Project>
+      <Name>Common.Data.SQL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Common\Common\Common.csproj">
       <Project>{a5fcf60b-4f78-49d8-9154-f7ced8720f1a}</Project>
       <Name>Common</Name>

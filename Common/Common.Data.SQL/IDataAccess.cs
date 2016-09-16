@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
 
 namespace Common.Data.SQL
@@ -12,9 +8,11 @@ namespace Common.Data.SQL
     public interface IDataAccess
     {
         #region Connections
+
         string ConnectionString { get; }
         string ConnectionStringWithoutCredentials { get; }
         DbConnection CreateConnection();
+
         #endregion
 
         #region Parameters
@@ -77,9 +75,13 @@ namespace Common.Data.SQL
 
         #region Transactions
 
-        void ExecuteTransaction(Action action, TransactionScopeOption transactionScopeOption = TransactionScopeOption.Required, TransactionOptions transactionOptions = new TransactionOptions());
+        void ExecuteTransaction(Action action,
+            TransactionScopeOption transactionScopeOption = TransactionScopeOption.Required,
+            TransactionOptions transactionOptions = new TransactionOptions());
 
-        T ExecuteTransaction<T>(Func<T> function, TransactionScopeOption transactionScopeOption = TransactionScopeOption.Required, TransactionOptions transactionOptions = new TransactionOptions());
+        T ExecuteTransaction<T>(Func<T> function,
+            TransactionScopeOption transactionScopeOption = TransactionScopeOption.Required,
+            TransactionOptions transactionOptions = new TransactionOptions());
 
         #endregion
     }

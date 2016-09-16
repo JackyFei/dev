@@ -11,7 +11,7 @@ namespace Common.Data.SQL
         #region Fields & Properties
 
         private readonly DatabaseProviderFactory _dbProviderFactory = new DatabaseProviderFactory();
-        private Database DatabaseInstance { get; set; }
+        private Database DatabaseInstance { get; }
 
         #endregion
 
@@ -35,7 +35,7 @@ namespace Common.Data.SQL
         }
         #endregion
 
-        #region ISqlDataAccess
+        #region IDataAccess
 
         #region Connections
         public string ConnectionString
@@ -244,7 +244,7 @@ namespace Common.Data.SQL
             }
             catch (DbException dbException)
             {
-                throw new SjkException(ErrorCodes.DataAccessError, Resources.ErrorCodes.GeneralDataAccessError, dbException);
+                throw dbException;
             }
         }
 
@@ -256,8 +256,7 @@ namespace Common.Data.SQL
             }
             catch (DbException dbException)
             {
-                throw new SjkException(ErrorCodes.DataAccessError, Resources.ErrorCodes.GeneralDataAccessError,
-                    dbException);
+                throw dbException;
             }
         }
 

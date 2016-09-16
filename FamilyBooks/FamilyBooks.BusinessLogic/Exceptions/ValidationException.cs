@@ -1,5 +1,4 @@
-﻿using System;
-namespace FamilyBooks.BusinessLogic.Exceptions
+﻿namespace FamilyBooks.BusinessLogic.Exceptions
 {
     public class ValidationException: FamilyBooksException
     {
